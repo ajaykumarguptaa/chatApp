@@ -41,7 +41,7 @@ const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
     // origin: process.env.FRONTEND_URL,
-    origin: 'chat-app-frontend-ochre-eight.vercel.app',
+    origin: '*',
     
     credentials: true,
   },
